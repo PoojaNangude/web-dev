@@ -1,0 +1,168 @@
+.wd-page-background {
+background-color: black;
+}
+
+.wd-vertical-line1 {
+    border-right: 1px solid rgb(47, 51, 54);
+        height: 100%;
+        width: 40px;
+}
+
+.wd-vertical-line2 {
+border-right: 1px solid rgb(47, 51, 54);
+        height: 100%;
+        width: 700px;
+}
+
+.wd-horizontal-line {
+    border: 1px solid rgb(47, 51, 54);
+    margin-left: 40px;
+}
+
+.wd-bookmark-style {
+    font-size: 20px;
+    padding-top: 12px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+
+.wd-text-padding {
+    padding-left:56px;
+}
+
+.wd-image-padding {
+    padding-left:140px;
+    padding-right:50px;
+}
+
+.wd-user-handle-style {
+    font-size: 13px;
+    color: rgb(110, 118, 125);
+    padding-bottom: 12px;
+}
+
+.wd-grid-row {
+    clear: both;
+}
+
+.wd-text-color-white {
+color: rgb(255, 255, 255);
+}
+
+.wd-grid-col-one-fourth-page {
+    width: 11%;
+    float: left;
+}
+
+.wd-grid-col-three-fourth-page {
+    width: 89%;
+    float: left;
+}
+
+.wd-image-class {
+    border-radius: 50%;
+}
+
+.wd-bottom-padding {
+    padding-bottom: 12px;
+}
+
+.wd-float-left {
+    float: left;
+}
+
+.wd-author-handle {
+    float:left;
+    padding-right: 3px;
+    padding-top: 8px;
+    font-size: 15px;
+}
+
+.wd-grey-text {
+    color: rgb(110, 118, 125);
+}
+
+.wd-post-style{
+    font-size: 15px;
+    padding-top: 2px;
+    color: rgb(255, 255, 255);
+    word-wrap: break-word;
+    width: 506px;
+}
+
+.wd-post-image {
+    border-radius: 20px 20px 0px 0px;
+    height: 264px;
+    width: 504px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.dimension-portrait {
+    width: 75px;
+    height: 100px;
+}
+
+.bg-color-yellow
+{ background-color: #ffff07; }
+
+.wd-title-style {
+    font-size: 15px;
+    padding-bottom: 12px;
+    color: rgb(255, 255, 255);
+    padding-left: 6px;
+}
+
+.wd-summary-style {
+    font-size: 15px;
+    color: rgb(110, 118, 125);
+    padding-top: 2px;
+    word-wrap: break-word;
+    width: 506px;
+    padding-left: 6px;
+    padding-bottom: 6px;
+}
+
+.rounded-corners-bottom {
+    border-radius: 50px;
+}
+
+.border-thin {
+border-width: 1px;
+border-radius: 25px;
+}
+
+.border-grey { border-color: rgb(47, 51, 54); }
+
+.border-solid { border-style: solid; }
+
+.wd-navbar {
+    float:left;
+    padding-left: 15px;
+    padding-right: 50px;
+    padding-top: 8px;
+    font-size: 15px;
+}
+
+.wd-hyperlink {
+color: rgb(110, 118, 125);
+text-decoration: none;
+}
+
+.wd-ellipsis-icon {
+    float: right;
+    padding-right: 10px;
+    color: rgb(110, 118, 125);
+}
+
+.wd-ellipsis-icon-blue {
+    float: right;
+    padding-right: 10px;
+    color: rgb(29, 161, 242);
+}
+
+.wd-icon {
+    color: rgb(110, 118, 125);
+    padding-right: 5px;
+}

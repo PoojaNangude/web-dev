@@ -1,0 +1,21 @@
+.bg-color-red {
+    background-color: rgb(255, 112, 77);
+}
+
+.bg-color-blue {
+    background-color: rgb(128, 128, 255);
+}
+
+.bg-color-yellow {
+    background-color: rgb(255, 255, 0);
+}
+
+.btn-primary.override-bs {
+    background-color: #a90dfd;
+    border-color: #fd0d51;
+    border-width: 10px;
+    border-radius: 20px;
+    border-style: dashed;
+    font-size: 2em;
+        font-weight: bolder;
+}
