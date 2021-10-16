@@ -16,7 +16,7 @@ const ExploreComponent = () => {
 
 
 
-                <div class="row">
+                <div class="row pt-2">
                     <ul class="nav nav-tabs" id="myTab" role="tablist">
                         <li class="nav-item" role="presentation">
                             <a
