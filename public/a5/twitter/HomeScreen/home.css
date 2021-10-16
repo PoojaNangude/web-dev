@@ -2,9 +2,15 @@
     position: absolute;
 }
 
-.wd-icon {
+.wd-icon-grey {
     padding: 10px;
     min-width: 40px;
+}
+
+.wd-icon-grey {
+    padding: 10px;
+    min-width: 40px;
+    color: rgb(110, 118, 125);
 }
 
 .wd-search-box {
@@ -158,6 +164,15 @@ color: white;
 text-decoration: none;
 }
 
+.wd-hyperlink-grey {
+color: rgb(110, 118, 125);
+text-decoration: none;
+}
+
+.wd-color-grey {
+color: rgb(110, 118, 125);
+}
+
 .wd-side-bar-footer {
     color: rgb(110, 118, 125);
 }
@@ -235,10 +250,6 @@ border-radius: 25px;
 .wd-post-image {
 border-top-left-radius: 25px;
 border-top-right-radius: 25px;
-}
-
-wd-post-image-all-side-rounded {
-border-radius: 25px;
 }
 
 .wd-user-handle {

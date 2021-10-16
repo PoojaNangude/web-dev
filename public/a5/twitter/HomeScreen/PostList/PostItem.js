@@ -19,12 +19,15 @@ const PostItem = (post) => {
                         <div class="row ps-4 wd-user-handle">
                         ${post.description}
                         </div>
+                        <div class="">
+                        <i class="fa fa-link wd-icon-grey"><a class="ps-1 wd-hyperlink-grey" href="${post.link}">${post.linkText}</a></i>
+                        </div>
                     </div>
                     <div class="row">
-                        <div class="col-3 wd-navbar"><a class="wd-hyperlink wd-float-left" href="#"><i class="fa fa-comment wd-icon"></i>${post.commentsCount}</a></div>
-                        <div class="col-3 wd-navbar"><a class="wd-hyperlink wd-float-left" href="#"><i class="fa fa-retweet wd-icon"></i>${post.retweetsCount}</a></div>
-                        <div class="col-3 wd-navbar"><a class="wd-hyperlink wd-float-left" href="#"><i class="fa fa-heart wd-icon"></i>${post.likesCount}</a></div>
-                        <div class="col-3 wd-navbar"><a class="wd-hyperlink wd-float-left" href="#"><i class="fa fa-upload wd-icon"></i></a></div>
+                        <div class="col-3 wd-navbar"><a class="wd-hyperlink-grey wd-float-left" href="#"><i class="fa fa-comment wd-icon"></i>${post.commentsCount}</a></div>
+                        <div class="col-3 wd-navbar"><a class="wd-hyperlink-grey wd-float-left" href="#"><i class="fa fa-retweet wd-icon"></i>${post.retweetsCount}</a></div>
+                        <div class="col-3 wd-navbar"><a class="wd-hyperlink-grey wd-float-left" href="#"><i class="fa fa-heart wd-icon"></i>${post.likesCount}</a></div>
+                        <div class="col-3 wd-navbar"><a class="wd-hyperlink-grey wd-float-left" href="#"><i class="fa fa-upload wd-icon"></i></a></div>
                         <div style="clear:both;">&nbsp;</div>
                     </div>
                 </div>
