@@ -1,14 +1,12 @@
 import NavigationSidebar from "./NavigationSidebar/index.js";
-import ExploreComponent from "./ExploreComponent/ExploreComponent.js";
 import PostSummaryList from "./PostSummaryList/PostSummaryList.js";
-import WhoToFollowList from "./WhoToFollowList/WhoToFollowList.js";
 import PostList from "./PostList/PostList.js";
 
 $('#wd-home').append(`
     <div class="container pt-4 wd-font-size">
         <div class="row">
             <div class="col-3 col-lg-2 col-xl-2">
-            ${NavigationSidebar()}
+            ${NavigationSidebar('home')}
             </div>
             <div class="col-9 col-lg-7 col-xl-7">
             ${PostList()}
