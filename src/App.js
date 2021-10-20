@@ -1,8 +1,8 @@
 import './App.css';
-import 'bootstrap/dist/css/bootstrap.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import 'font-awesome/css/font-awesome.css';
-import 'font-awesome/css/font-awesome.min.css';
+// import 'bootstrap/dist/css/bootstrap.css';
+// import 'bootstrap/dist/css/bootstrap.min.css';
+// import 'font-awesome/css/font-awesome.css';
+// import 'font-awesome/css/font-awesome.min.css';
 import HelloWorld from "./components/a6/HelloWorld";
 import Practice from "./components/a6/Practice";
 import Build from "./components/a6/Build";
