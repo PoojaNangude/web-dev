@@ -6,6 +6,7 @@ const WhoToFollowListItem = (props) => {
                         <div className="row">
                             <div className="col-2">
                                 <img src={props.avatarIcon}
+                                     alt="Not able to load image"
                                      height={60}
                                      width={60}
                                 className="rounded-circle float-start"

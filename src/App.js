@@ -6,8 +6,6 @@ import 'bootswatch/dist/cyborg/bootstrap.min.css';
 import HelloWorld from "./components/a6/HelloWorld";
 import Practice from "./components/a6/Practice";
 import Build from "./components/a6/Build";
-import HomeScreen from "./components/a6/Build/HomeScreen";
-import ExploreScreen from "./components/a6/Build/ExploreScreen";
 import {BrowserRouter, Route} from 'react-router-dom';
 import Home from "./components/a6/Build/HomeScreen/Home";
 import Explore from "./components/a6/Build/ExploreScreen/Explore";

@@ -149,6 +149,12 @@
     color: rgb(110, 118, 125);
 }
 
+.wd-heart-icon {
+    padding-top: 10px;
+    color: red;
+    padding-right: 8px;
+}
+
 .wd-settings-icon {
     color: white;
     stroke: blue;
