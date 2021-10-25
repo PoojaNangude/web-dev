@@ -4,7 +4,7 @@ const PostItem = (props) => {
             <div className="row ">
                 <div className="col-2">
                     <img src={props.profileImage}
-                         alt="Not able to load image"
+                         alt="Not able to load"
                          className="wd-image-style rounded-circle pt-1"/>
                 </div>
                 <div className="col-10">
@@ -15,7 +15,7 @@ const PostItem = (props) => {
                     <div className="wd-font-color-white">{props.tagline}</div>
                     <div className="row border-thin border-grey border-solid">
                         <img src={props.descriptionImage}
-                             alt="Not able to load image"
+                             alt="Not able to load"
                              className="wd-post-image pt-1 pb-1"/>
                         <div className="wd-text-bold wd-font-color-white">
                         {props.topic}

@@ -83,7 +83,7 @@ const ExploreScreen = () => {
                     <div className="row ">
                         <div className="wd-container pt-1">
                             <img src={spaceship}
-                                 alt="Not able to load image"
+                                 alt="Not able to load"
                                  className="wd-image-border"
                                  width="100%"
                                  height="100%"

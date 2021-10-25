@@ -20,7 +20,7 @@ const PostSummaryListItem = (props) => {
             <div className="col-3">
                 <div className="row">
                     <img src={props.image}
-                         alt="Not able to load image"
+                         alt="Not able to load"
                          height={125}/>
                 </div>
             </div>
