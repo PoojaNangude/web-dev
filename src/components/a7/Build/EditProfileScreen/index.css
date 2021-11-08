@@ -1,0 +1,40 @@
+.wd-save-page-style {
+    background-color: white;
+    color: black;
+}
+
+.wd-color-white {
+    color: white;
+}
+
+.wd-form-background {
+    background-color: black;
+}
+
+.wd-text-color-white {
+    color: white;
+}
+
+.wd-border-black {
+    border: black;
+}
+
+.wd-text-color-grey {
+    color: rgb(110, 118, 125);
+}
+
+.wd-border-grey {
+    border-color: rgb(110, 118, 125);
+}
+
+.wd-input-text {
+    font-size: 16px;
+}
+
+.wd-user-input {
+    font-size: 18px;
+}
+
+.wd-remove-underline {
+    text-decoration: none;
+}

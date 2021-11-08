@@ -8,16 +8,16 @@ const NavigationSidebar = ({
     return(
         <div>
             <div className="list-group d-none d-lg-block">
-                <Link to="/a6/"
+                <Link to="/a7/"
                       className="list-group-item">
                     <i className="fa fa-twitter fa-2x"></i>
                 </Link>
-                <Link to="/a6/twitter/home"
+                <Link to="/a7/twitter/home"
                       className={`list-group-item ${active === 'home' ? 'active' : ''}`}>
                     <i className="fa fa-home"></i>
                     <span className="d-none d-xl-inline">Home</span>
                 </Link>
-                <Link to="/a6/twitter/explore"
+                <Link to="/a7/twitter/explore"
                       className={`list-group-item ${active === 'explore' ? 'active' : ''}`}>
                     <i className="fa fa-hashtag"></i>
                     <span className="d-none d-xl-inline">Explore</span>
@@ -42,7 +42,7 @@ const NavigationSidebar = ({
                     <i className="fa fa-list"></i>
                     <span className="d-none d-xl-inline">Lists</span>
                 </Link>
-                <Link to="#"
+                <Link to="/a7/twitter/profile"
                       className={`list-group-item ${active === 'profile' ? 'active' : ''}`}>
                     <i className="fa fa-user"></i>
                     <span className="d-none d-xl-inline">Profile</span>
@@ -55,15 +55,15 @@ const NavigationSidebar = ({
             </div>
 
             <div className="list-group d-lg-none">
-                <Link to="/a6/"
+                <Link to="/a7/"
                       className="list-group-item">
                     <i className="fa fa-twitter fa-2x"></i>
                 </Link>
-                <Link to="/a6/twitter/home"
+                <Link to="/a7/twitter/home"
                       className={`list-group-item ${active === 'home' ? 'active' : ''}`}>
                     <i className="fa fa-home"></i>
                 </Link>
-                <Link to="/a6/twitter/explore"
+                <Link to="/a7/twitter/explore"
                       className={`list-group-item ${active === 'explore' ? 'active' : ''}`}>
                     <i className="fa fa-hashtag"></i>
                 </Link>
@@ -83,7 +83,7 @@ const NavigationSidebar = ({
                       className={`list-group-item ${active === 'list' ? 'active' : ''}`}>
                     <i className="fa fa-list"></i>
                 </Link>
-                <Link to="#"
+                <Link to="/a7/twitter/profile"
                       className={`list-group-item ${active === 'profile' ? 'active' : ''}`}>
                     <i className="fa fa-user"></i>
                 </Link>
