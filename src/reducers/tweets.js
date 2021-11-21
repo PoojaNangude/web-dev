@@ -2,6 +2,11 @@ import tweetsJson from './data/tweets.json';
 
 const tweets = (state = tweetsJson, action) => {
     switch (action.type) {
+        case 'fetch-all-tweets':
+            return(action.tweets
+            );
+            break;
+
         case 'create-tweet':
             const tweet = {
                 "_id": (new Date()).getTime(),
