@@ -14,7 +14,7 @@ const TweetList = () => {
 
     useEffect(() => {
             fetchAllTweets().then(tweets => setTweets(tweets))
-        }, [])
+        })
 
 
     return(

@@ -1,6 +1,5 @@
 import React, {useState} from "react";
 import {useDispatch} from "react-redux";
-import {postNewTweet, fetchAllTweets} from "../../services/twitterService";
 import service from "../../services/twitterService";
 
 const WhatsHappening = () => {
@@ -8,23 +7,6 @@ const WhatsHappening = () => {
     const dispatch = useDispatch();
 
 const tweetClickHandler = () => {
-    // service.postNewTweet({
-    //     "topic": "Web Development",
-    //     "userName": "jQuery",
-    //     "verified": false,
-    //     "handle": "jQuery",
-    //     "title": "jQuery",
-    //     "time": "last week",
-    //     "logo-image": "https://openjsf.org/wp-content/uploads/sites/84/2019/10/jquery-logo-vertical_large_square.png",
-    //     "avatar-image": "../../../images/jquery.png",
-    //     "tweets": "122K",
-    //     "stats": {
-    //         "comments": 123,
-    //         "retweets": 234,
-    //         "likes": 345
-    //     },
-    //     "tweet": whatsHappening
-    // });
     const newTweet = {
         "topic": "Web Development",
         "userName": "jQuery",
@@ -44,9 +26,6 @@ const tweetClickHandler = () => {
     }
     service.postNewTweet(dispatch,newTweet);
 }
-
-
-
 
     return(
         <>
