@@ -1,18 +1,15 @@
-import React, {useEffect} from "react";
+import React, {useEffect, useState} from "react";
 import './index.css';
-import {useDispatch, useSelector} from "react-redux";
 import {Link, useHistory} from "react-router-dom";
-import {getProfile} from "../../../../services/profileService";
-
-const profileData = (state) => state.profile;
+import {getProfile} from "../../services/profileService";
 
 const ProfilePage = () => {
     let history = useHistory();
+    const [profile, setProfile] = useState([]);
 
-    const dispatch = useDispatch();
-    const profile = useSelector(profileData)[0];
-
-    useEffect(() => getProfile(dispatch),[])
+    useEffect(() => {
+        getProfile().then(profile => setProfile(profile[0]));
+    }, [])
 
     return(
       <div>
@@ -39,7 +36,7 @@ const ProfilePage = () => {
 
 
           <div className="pt-3 pe-4">
-              <button className="row btn rounded-pill border pull-right fw-bold wd-font-color-white" onClick={()=>history.push("/a8/twitter/editprofile")}>Edit Profile</button>
+              <button className="row btn rounded-pill border pull-right fw-bold wd-font-color-white" onClick={()=>history.push("/a9/twitter/editprofile")}>Edit Profile</button>
           </div>
 
           <div className="pt-5"></div>

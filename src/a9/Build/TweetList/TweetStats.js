@@ -1,16 +1,16 @@
 import React from "react";
 import {useDispatch} from "react-redux";
-import {likeTweet} from "../../../../services/twitterService";
+import {likeTweet} from "../../services/twitterService";
 
 const TweetStats = ({tweet}) => {
     const dispatch = useDispatch();
 
     const likeClickHandler = () => {
-        likeTweet(dispatch, tweet);
+        likeTweet(tweet);
     };
 
     return (<div className="row mt-2">
-        {console.log("tweet a8", tweet.liked)}
+        {console.log("tweet", tweet.liked)}
         <div className="col">
             <i className="fa fa-comment me-2"></i>
             {tweet.stats.comments}

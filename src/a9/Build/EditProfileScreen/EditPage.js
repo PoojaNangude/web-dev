@@ -1,23 +1,30 @@
-import React, {useState} from "react";
+import React, {useEffect, useState} from "react";
 import './index.css';
-import {useSelector} from "react-redux";
 import {useHistory} from "react-router-dom";
-import {useDispatch} from "react-redux";
-import  {updateProfile} from "../../../../services/profileService";
-
-const profileData = (state) => state.profile;
+import {getProfile, updateProfile} from "../../services/profileService";
 
 const EditPage = () => {
     let history = useHistory();
-    const profile = useSelector(profileData)[0];
-    const dispatch = useDispatch();
+    const [profile, setProfile] = useState([]);
 
-    const [firstName, setFirstName] = useState(profile["firstName"]);
-    const [lastName, setLastName] = useState(profile["lastName"]);
-    const [bio, setBio] = useState(profile["bio"]);
-    const [location, setLocation] = useState(profile["location"]);
-    const [website, setWebsite] = useState(profile["website"]);
-    const [birthDate, setBirthdate] = useState(profile["dateOfBirth"]);
+    const [firstName, setFirstName] = useState('');
+    const [lastName, setLastName] = useState('');
+    const [bio, setBio] = useState('');
+    const [location, setLocation] = useState('');
+    const [website, setWebsite] = useState('');
+    const [birthDate, setBirthdate] = useState('');
+
+    useEffect(() => {
+        getProfile().then(profile => {
+                setProfile(profile[0]);
+                setFirstName(profile[0]["firstName"]);
+                setLastName(profile[0]["lastName"]);
+                setBio(profile[0]["bio"]);
+                setLocation(profile[0]["location"]);
+                setWebsite(profile[0]["website"]);
+                setBirthdate(profile[0]["dateOfBirth"]);
+        });
+    }, [])
 
     const saveUserProfileDetails = () => {
         profile["firstName"] = firstName;
@@ -26,9 +33,9 @@ const EditPage = () => {
         profile["location"] = location;
         profile["website"] = website;
         profile["dateOfBirth"] = birthDate;
-        dispatch({type: 'update-profile', profile});
-        updateProfile(dispatch, profile);
-        history.push("/a8/twitter/profile");
+        console.log("called when clicked on save", profile);
+        // updateProfile(profile);
+        history.push("/a9/twitter/profile");
     }
 
     return(
@@ -52,16 +59,6 @@ const EditPage = () => {
           <div className="col-sm-3 avatar-container">
               <img src={profile["profileImage"]} className="rounded-circle profile-avatar" alt="User avatar"/>
           </div>
-
-          {/*<div className="row pt-3">*/}
-          {/*    <img src="https://medhaavi.in/wp-content/uploads/2020/07/1_jd8ZKUWtY1AOMwz2CvZG8A.jpg"*/}
-          {/*         height={200}*/}
-          {/*    />*/}
-          {/*</div>*/}
-
-          {/*<div className="row">*/}
-          {/*    <img className="imgB1 col-3 rounded-circle pull-left" src="https://i.dailymail.co.uk/i/pix/2014/03/26/article-0-1C91BEE700000578-336_306x393.jpg"/>*/}
-          {/*</div>*/}
 
           <div className="pt-5"></div>
           <div className="pt-5"></div>

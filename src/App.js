@@ -26,6 +26,13 @@ import A8Explore from "./components/a8/Build/ExploreScreen/Explore";
 import A8ProfileScreen from "./components/a8/Build/ProfileScreen";
 import A8EditProfileScreen from "./components/a8/Build/EditProfileScreen";
 
+import A9Practice from "../src/a9/Practice";
+import A9Build from "../src/a9/Build";
+import A9Home from "../src/a9/Build/HomeScreen/Home";
+import A9Explore from "../src/a9/Build/ExploreScreen/Explore";
+import A9ProfileScreen from "../src/a9/Build/ProfileScreen";
+import A9EditProfileScreen from "../src/a9/Build/EditProfileScreen";
+
 import who from "./reducers/who";
 import tweets from "./reducers/tweets";
 import profile from "./reducers/profile";
@@ -74,6 +81,10 @@ function App() {
                 <hr></hr>
                 <h1>Assignment 8: NODE</h1>
                 <A8Practice/>
+
+                <hr></hr>
+                <h1>Assignment 9: </h1>
+                <A9Practice/>
             </Route>
 
             <Route path="/a7/twitter" exact={true}>
@@ -120,6 +131,33 @@ function App() {
             <Route path="/a8/twitter/editprofile" exact={true}>
                 <A8EditProfileScreen/>
             </Route>
+
+            {/*Assignment 9 routes*/}
+            <Route path="/a9/practice" exact={true}>
+                <A9Practice/>
+            </Route>
+
+            <Route path="/a9/twitter" exact={true}>
+                <A9Build/>
+            </Route>
+
+            <Route path="/a9/twitter/home" exact={true}>
+                <A9Home/>
+            </Route>
+
+            <Route path="/a9/twitter/explore" exact={true}>
+                <A9Explore/>
+            </Route>
+
+            <Route path="/a9/twitter/profile" exact={true}>
+                <A9ProfileScreen/>
+            </Route>
+
+            <Route path="/a9/twitter/editprofile" exact={true}>
+                <A9EditProfileScreen/>
+            </Route>
+
+
 
         </div>
       </BrowserRouter>
